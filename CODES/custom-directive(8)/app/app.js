@@ -1,4 +1,4 @@
-let myapp = angular.module('myapp',['ngRoute']);
+ let myapp = angular.module('myapp',['ngRoute']);
 
 myapp.config(['$routeProvider', function($routeProvider){
     $routeProvider
@@ -16,10 +16,10 @@ myapp.config(['$routeProvider', function($routeProvider){
 }]);
 myapp.directive('randomStudent', [function () {
     return {
-        restrict: 'E',
+        restrict: 'E',// E elements
         scope: {
-            institute: '=',
-            title:'='
+            institute: '=', //= binding
+            
         }, 
          templateUrl: 'views/random.html',
          controller: function($scope){
