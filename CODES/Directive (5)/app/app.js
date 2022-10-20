@@ -58,6 +58,7 @@ myapp.controller('myappcontroller',['$scope', function($scope){
         }
 
     ];
+    console.log(angular.toJson($scope.institute));
    
 
 
